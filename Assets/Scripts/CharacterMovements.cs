@@ -10,6 +10,7 @@ public class CharacterMovements : MonoBehaviour
 
     private float horizontalAxis;
     public float facing = 1;
+    public bool canMove = true;
 
     [SerializeField] private float speed;
     [SerializeField] private float acceleration;
@@ -40,7 +41,9 @@ public class CharacterMovements : MonoBehaviour
             facing = -1;
         }
 
-        Run();
+        if(canMove) {
+            Run();
+        }
     }
 
     private void getInput() {
