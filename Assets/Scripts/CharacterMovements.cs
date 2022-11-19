@@ -9,7 +9,7 @@ public class CharacterMovements : MonoBehaviour
     private Transform trans;
 
     private float horizontalAxis;
-    private float facing = 1;
+    public float facing = 1;
 
     [SerializeField] private float speed;
     [SerializeField] private float acceleration;

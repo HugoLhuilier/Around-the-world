@@ -221,8 +221,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1665681295}
-  smoothFact: 0.5
-  offset: {x: 0, y: 2, z: -10}
+  targetMove: {fileID: 1665681298}
+  smoothFact: 0.2
+  setOffset: {x: 5, y: 2, z: -10}
+  camMinLim: {x: -16, y: -1.7, z: -10}
+  camMaxLimit: {x: 16, y: 2, z: -10}
 --- !u!1 &1165052328
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b95d4d156657b254f925d314f56ecdc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facing: 1
   speed: 5
   acceleration: 10
   deceleration: 10
