@@ -5,7 +5,7 @@ public class CharacterMovements : MonoBehaviour
 {
     private Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
-    //private SpriteRenderer spriteRendererHead;
+    private SpriteRenderer spriteRendererHead;
 
     private float horizontalAxis;
     public float facing = 1;
@@ -23,7 +23,7 @@ public class CharacterMovements : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //spriteRendererHead = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        spriteRendererHead = transform.GetChild(0).GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -31,7 +31,8 @@ public class CharacterMovements : MonoBehaviour
         getInput();
     }
 
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         if (horizontalAxis > 0.1f)
         {
             facing = 1;
@@ -41,10 +42,11 @@ public class CharacterMovements : MonoBehaviour
             facing = -1;
         }
 
-        if(canMove) {
+        if (canMove)
+        {
             horizontalSpeed = Run();
         }
-        //Flip(horizontalSpeed);
+        Flip(facing);
         animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
     }
 
@@ -61,18 +63,18 @@ public class CharacterMovements : MonoBehaviour
         return movement;
     }
 
-    private void Flip(float velocity)
+    private void Flip(float facing)
     {
-        if(velocity < -0.01f)
+        if(facing == -1)
         {
             spriteRenderer.flipX = true;
-            //spriteRendererHead.flipX = true;
+            spriteRendererHead.flipX = true;
 
         }
-        else if (velocity > 0f)
+        else if (facing == 1)
         {
             spriteRenderer.flipX = false;
-            //spriteRendererHead.flipX = false;
+            spriteRendererHead.flipX = false;
         }
     }
 }
