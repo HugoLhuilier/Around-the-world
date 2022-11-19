@@ -26,23 +26,18 @@ public class GameController : MonoBehaviour
     private ButtonController bController;
     [SerializeField] private TextMeshProUGUI pPointsText;
     [SerializeField] private TextMeshProUGUI rPointsText;
+    [SerializeField] private int pointsToReach = 3;
 
+ 
     // Start is called before the first frame update
     void Start()
     {
         normalSize = text3.transform.localScale;
         resultsText = results.GetComponent<TextMeshProUGUI>();
         bController = GetComponent<ButtonController>();
-        pPointsText.SetText("0/5");
-        rPointsText.SetText("0/5");
+        pPointsText.SetText("0/" + pointsToReach.ToString());
+        rPointsText.SetText("0/" + pointsToReach.ToString());
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     public IEnumerator CountDown(string myChoice, string npcChoice)
     {
@@ -156,14 +151,14 @@ public class GameController : MonoBehaviour
     {
         pPoints += 1;
         resultsText.SetText("Super !");
-        pPointsText.SetText(pPoints.ToString() + "/5");
+        pPointsText.SetText(pPoints.ToString() + "/" + pointsToReach.ToString());
     }
 
     public void RWins()
     {
         rPoints += 1;
         resultsText.SetText("Roland l'emporte !");
-        rPointsText.SetText(rPoints.ToString() + "/5");
+        rPointsText.SetText(rPoints.ToString() + "/" + pointsToReach.ToString());
     }
 
     public void Draw()
