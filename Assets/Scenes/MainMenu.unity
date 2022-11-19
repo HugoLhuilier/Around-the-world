@@ -143,7 +143,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6987923798558977376, guid: fba3360864faab74ba40b4ff2d2849da, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6987923798558977376, guid: fba3360864faab74ba40b4ff2d2849da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -490,6 +490,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1373054261776339889, guid: fd893157feaf2cd4f901b17c2fd13211, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1373054262962673217, guid: fd893157feaf2cd4f901b17c2fd13211, type: 3}
       propertyPath: m_Name
       value: LevelLoader

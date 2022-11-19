@@ -315,6 +315,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1774517560}
     m_Modifications:
+    - target: {fileID: 1568521611, guid: fba3360864faab74ba40b4ff2d2849da, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6987923797782608543, guid: fba3360864faab74ba40b4ff2d2849da, type: 3}
       propertyPath: m_SortingLayer
       value: 3
@@ -704,7 +708,7 @@ MonoBehaviour:
   m_text: Woaw !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
-  m_sharedMaterial: {fileID: 685722748283493165, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -767,7 +771,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1122527245

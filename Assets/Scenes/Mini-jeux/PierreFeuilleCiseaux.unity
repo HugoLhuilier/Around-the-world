@@ -789,6 +789,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
     - target: {fileID: 4433986037420407584, guid: 4a5be7baac77d874c8d60a39a36bff75, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433986037420407584, guid: 4a5be7baac77d874c8d60a39a36bff75, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
@@ -865,6 +869,7 @@ MonoBehaviour:
   canvas: {fileID: 1755063399}
   pPointsText: {fileID: 1946555851}
   rPointsText: {fileID: 1941564552}
+  pointsToReach: 3
 --- !u!4 &954981684
 Transform:
   m_ObjectHideFlags: 0
@@ -2081,7 +2086,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
-  m_sharedMaterial: {fileID: 685722748283493165, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+  m_sharedMaterial: {fileID: -3288163747921333244, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2216,7 +2221,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
-  m_sharedMaterial: {fileID: 685722748283493165, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+  m_sharedMaterial: {fileID: -3288163747921333244, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
