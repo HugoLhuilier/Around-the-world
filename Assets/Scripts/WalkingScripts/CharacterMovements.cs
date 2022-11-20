@@ -11,7 +11,7 @@ public class CharacterMovements : MonoBehaviour
     public float facing = 1;
     public bool canMove = true;
     private float horizontalSpeed;
-    //private List<SpriteRenderer> spriteRenderers;
+    private bool initialFlip;
 
     [SerializeField] private Animator animator;
     [SerializeField] private float speed;
@@ -24,6 +24,7 @@ public class CharacterMovements : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRendererHead = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        initialFlip = GetComponent<SpriteRenderer>().flipX;
     }
 
     void Update()
@@ -67,14 +68,14 @@ public class CharacterMovements : MonoBehaviour
     {
         if(facing == -1)
         {
-            spriteRenderer.flipX = true;
-            spriteRendererHead.flipX = true;
+            spriteRenderer.flipX = !initialFlip;
+            spriteRendererHead.flipX = !initialFlip;
 
         }
         else if (facing == 1)
         {
-            spriteRenderer.flipX = false;
-            spriteRendererHead.flipX = false;
+            spriteRenderer.flipX = initialFlip;
+            spriteRendererHead.flipX = initialFlip;
         }
     }
 }

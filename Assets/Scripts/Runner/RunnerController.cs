@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RunnerController : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class RunnerController : MonoBehaviour
     private bool playing = true;
     [SerializeField] private int playTime;
     [SerializeField] private TextMeshProUGUI textTime;
+    [SerializeField] private TextMeshProUGUI textReults;
+    [SerializeField] private LvlLoaderv2 loader;
+    [SerializeField] private int nextSceneIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +33,11 @@ public class RunnerController : MonoBehaviour
         if(playing)
         {
             Cooldowns();
+            if (player.vies <= 0)
+            {
+                playing = false;
+                StartCoroutine(Perdu());
+            }
         }
     }
 
@@ -54,11 +63,29 @@ public class RunnerController : MonoBehaviour
 
     IEnumerator Timer()
     {
-        while (playTime > 0)
+        while (playTime > 0 && playing)
         {
             yield return new WaitForSeconds(1f);
             playTime--;
             textTime.text = playTime.ToString();
         }
+
+        if (playing)
+        {
+            textReults.text = "Bien joué !";
+            textReults.gameObject.SetActive(true);
+            playing = false;
+            yield return new WaitForSeconds(3f);
+            loader.LoadNextLevel(nextSceneIndex);
+        }
+    }
+
+    IEnumerator Perdu()
+    {
+        textReults.text = "Dommage...";
+        textReults.gameObject.SetActive(true);
+        playing = false;
+        yield return new WaitForSeconds(3f);
+        loader.LoadNextLevel(SceneManager.GetActiveScene().buildIndex);
     }
 }

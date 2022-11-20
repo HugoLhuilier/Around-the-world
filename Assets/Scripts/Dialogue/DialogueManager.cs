@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     private char nameCharacter;
     private string dialogueBoby;
+    private string userName = (System.Environment.UserName);
 
     public IsWriting isWriting;
 
@@ -94,7 +95,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            nameText.text = "Joueur";
+            nameText.text = userName;
         }
     }
 

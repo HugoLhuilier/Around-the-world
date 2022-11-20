@@ -56,7 +56,6 @@ public class RunPlayerMovements : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        print("COLLISION");
         if (collision.gameObject.tag == "Caisse" && invCooldown > 0)
         {
             vies--;
