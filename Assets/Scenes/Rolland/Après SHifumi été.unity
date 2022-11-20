@@ -123,6 +123,114 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &88546278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3897322384804545559, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_Name
+      value: Dialogues
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+--- !u!114 &88546279 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2047147374701582231, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+  m_PrefabInstance: {fileID: 88546278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdece960d205ec4496a6009d01c637a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &230567952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -332,6 +440,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: isWriting
+      value: 
+      objectReference: {fileID: 88546279}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "R Bravo\u2026 Tu es plus coriace que ce que tu en avais l\u2019air\u2026
+        Le pierre-feuille-ciseaux est mon jeu de predilection. C\u2019est d\u2019ailleurs
+        ma principale source de revenus."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: P Tu vis du jeu ??
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "R Oui. Tu verras, quand tu auras mon age. La vie n\u2019a pas de reel
+        but, alors eclate-toi comme tu peux avant de tomber dans l\u2019oubli.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "  Tu es tres pessimiste\u2026 Comment t\u2019appelles-tu ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "R  Roland. Au contraire, quand tu as compris \xE7a, tu vois la vie
+        d\u2019un \u0153il plus amuse, plus desinvolte. Essaie donc !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: "  C\u2019est en partie pour \xE7a que je voyage, mais\u2026 Tu n\u2019as
+        pas de famille ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: "R Je n\u2019en ai plus\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: "R Puisque tu m\u2019as battu, je vais te suivre dans ton voyage. Je
+        n\u2019ai rien d\u2019autre \xE0 faire de toute facon."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207728704989292340, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[8]
+      value: '  Avec joie !'
+      objectReference: {fileID: 0}
     - target: {fileID: 7052736854741969333, guid: a6ec2330eb1923e4b970b665ce3cf23d, type: 3}
       propertyPath: m_Name
       value: Hedgehog

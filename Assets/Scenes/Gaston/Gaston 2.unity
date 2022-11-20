@@ -334,6 +334,114 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &432965821
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3897322384804545559, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_Name
+      value: Dialogues
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494946243486718376, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+--- !u!114 &432965822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2047147374701582231, guid: 8769e8200db556d4d995fbd52db69c57, type: 3}
+  m_PrefabInstance: {fileID: 432965821}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdece960d205ec4496a6009d01c637a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &496555594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1544,9 +1652,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396516357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6150ea473c03ce840a74efa05ad5c2a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 010cd7f3103c4a944a876439728a69d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "  Mais qu\u2019est-ce que tu fais ici ?"
+    - G Oh ! Numa ! Si tu savais comment je suis heureux de te retrouver.
+    - "  Ca me fait aussi tres plaisir mais tu ne devais pas t\u2019envoler pour
+      voyager le plus loin possible ?"
+    - "G Si mais apres que tu m\u2019aies aide j\u2019ai reussi \xE0 maintenir mon
+      allure que pendant un certain temps pour apres me retrouver ici de nouveau
+      bloqu\xE9."
+    - "  Ouais un peu relou. Bon apr\xE8s moi je trouve cet endroit plut\xF4t sympa.
+      C\u2019est assez mignon comme paysage, tu ne trouves pas ?\r\n"
+    - "G Oui c\u2019est s\xFBr mais tu ne comprends pas. Le voyage n\u2019est pas
+      seulement une forte envie qui r\xE9side en moi, c'est aussi un besoin vital.
+      J\u2019ai besoin de changer d'environnement pour vivre, je ne peux rester au
+      m\xEAme endroit toute ma vie.\r\n"
+    - "  D\u2019accord je vois, je ne pensais pas que c\u2019\xE9tait si important.\r\n"
+    - "G C\u2019est pour \xE7a que je d\xE9sire tant voyager et d\xE9couvrir le monde,
+      je ne r\xEAve que d\u2019aventure\u2026\r\n"
+    - "  Ne m\u2019en dis pas plus, on a qu\u2019\xE0 r\xE9essayer de t\u2019apprendre
+      comment t\u2019envoler mais cette fois-ci il faudra que tu donnes tout ce que
+      tu as."
+    - 'G Bon cette fois-ci je vais tout faire pour y arriver et me surpasser !
+
+'
+    - "  C\u2019est parti !"
+  isWriting: {fileID: 432965822}
 --- !u!1001 &1413977626
 PrefabInstance:
   m_ObjectHideFlags: 0
