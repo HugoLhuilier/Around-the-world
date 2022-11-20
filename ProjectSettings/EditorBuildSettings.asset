@@ -10,11 +10,50 @@ EditorBuildSettings:
     guid: 6099db9aae18d5b47bc9acb75babdfe5
   - enabled: 0
     path: "Assets/Scenes/D\xE9but.unity"
-    guid: a1e95921ceeb81b49bf94e8c3e5ab066
+    guid: 0600686e48e28b444b2737b0aa9cf174
   - enabled: 1
-    path: Assets/Scenes/WalkingToGaston.unity
-    guid: 321ba279164026f4d93a98c15c2b74cb
+    path: Assets/Scenes/Gaston/Gaston 1.unity
+    guid: 7594ea20dbea298408455ab98320f75e
   - enabled: 1
-    path: Assets/Scenes/Mini-jeux/QTE v2.unity
-    guid: 3432be443e790cb42bf3bf72acb1eee2
+    path: Assets/Scenes/Mini-jeux/QTE 1.unity
+    guid: 20da38714d600574ba34a11661b1e2be
+  - enabled: 1
+    path: "Assets/Scenes/Rolland/Roland \xC9t\xE9.unity"
+    guid: 08d3aab6ff04f3747bfe19ef34016d50
+  - enabled: 1
+    path: "Assets/Scenes/Mini-jeux/Shifoumi \xE9t\xE9.unity"
+    guid: 8cf60d28b1333d64ba3ef8088634f59e
+  - enabled: 1
+    path: "Assets/Scenes/Rolland/Apr\xE8s SHifumi \xE9t\xE9.unity"
+    guid: e525f09c5f9fcca4d8904d52ab48c6f4
+  - enabled: 1
+    path: Assets/Scenes/Gaston/Gaston 2.unity
+    guid: ecd3a5f71c613894983bad31bb295c84
+  - enabled: 1
+    path: Assets/Scenes/Mini-jeux/QTE 2.unity
+    guid: c7cef5c32f3c5824386b2a8927e03652
+  - enabled: 1
+    path: "Assets/Scenes/Gaston/Apr\xE8s QTE 2.unity"
+    guid: 14bdc5af7b5f3d347b6709b2242f944f
+  - enabled: 1
+    path: "Assets/Scenes/Chlo\xE9/Chlo\xE9 Hiver.unity"
+    guid: 43d977ce344da7c4faa8a603a17a8a8e
+  - enabled: 1
+    path: Assets/Scenes/Mini-jeux/Shifoumi hiver.unity
+    guid: 2aca2b96e248fc94c85f8afc81d5cc88
+  - enabled: 1
+    path: "Assets/Scenes/Rolland/Apr\xE8s Shifoumi hiver.unity"
+    guid: 3497defeb8a10c94f804c8471c1634cf
+  - enabled: 1
+    path: Assets/Scenes/Gaston/Gaston 3.unity
+    guid: 9c8b68cd38a8c7844a3fbe873922e628
+  - enabled: 1
+    path: "Assets/Scenes/Chlo\xE9/Chlo\xE9 \xE9t\xE9.unity"
+    guid: 9070e4cad33e2284d99774d4ec4a8bc6
+  - enabled: 1
+    path: Assets/Scenes/Avant fin.unity
+    guid: 48f2f8bd314fb6d4a935d8732ae02f72
+  - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: 395fbf5824cce4243bd8fae6c52fbc5e
   m_configObjects: {}

@@ -16,6 +16,9 @@ public class DialogueManager : MonoBehaviour
     private string[] sentences;
     private int index;
 
+    private char nameCharacter;
+    private string dialogueBoby;
+
     public IsWriting isWriting;
 
 
@@ -23,7 +26,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && (isWriting.getWriting() == true))
         {
-            if (index == sentences.Length - 1 && dialogueText.text == sentences[index])
+            if (index == sentences.Length - 1 && dialogueText.text == dialogueBoby)
             {
                 UnityEngine.Debug.Log("fin");
                 nameText.text = "";
@@ -31,10 +34,10 @@ public class DialogueManager : MonoBehaviour
 
                 StartCoroutine(DebugTime());
             }
-            else if (dialogueText.text != sentences[index])
+            else if (dialogueText.text != dialogueBoby)
             {
                 StopAllCoroutines();
-                dialogueText.text = sentences[index];
+                dialogueText.text = dialogueBoby;
             }
             else
             {
@@ -49,10 +52,9 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         isWriting.changeWritingState(true);
-        nameText.text = dialogue.name;
         index = 0;
         sentences = dialogue.sentences;
-
+        
         DisplayNextSentence();
     }
 
@@ -60,15 +62,48 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        nameCharacter = sentences[index].ToCharArray()[0];
+        displayName(nameCharacter);
+
         dialogueText.text = "";
-        StartCoroutine(TypeSentence());
+        dialogueBoby = "";
+
+        char[] sentence = sentences[index].ToCharArray();
+        for (int i = 2; i < sentence.Length; i++)
+        {
+            dialogueBoby += sentence[i];
+        }
+        StartCoroutine(TypeSentence(dialogueBoby));
         }
 
 
 
-    IEnumerator TypeSentence()
+    public void displayName(char c)
     {
-        foreach (char letter in sentences[index].ToCharArray()) {
+        if (c == 'G')
+        {
+            nameText.text = "Gaston";
+        }
+        else if (c == 'C')
+        {
+            nameText.text = "Chloé";
+        }
+        else if (c == 'R')
+        {
+            nameText.text = "Roland";
+        }
+        else
+        {
+            nameText.text = "Joueur";
+        }
+    }
+
+
+
+    IEnumerator TypeSentence(string dialogueBody)
+    {
+        foreach (char letter in dialogueBody.ToCharArray())
+        {
             dialogueText.text += letter;
             yield return new WaitForSeconds(textSpeed);
         }
