@@ -45,11 +45,17 @@ EditorBuildSettings:
     path: "Assets/Scenes/Rolland/Apr\xE8s Shifoumi hiver.unity"
     guid: 3497defeb8a10c94f804c8471c1634cf
   - enabled: 1
+    path: Assets/Scenes/Mini-jeux/Runner.unity
+    guid: 9264c662676ac5e4aad92f8eda8e3b31
+  - enabled: 1
     path: Assets/Scenes/Gaston/Gaston 3.unity
     guid: 9c8b68cd38a8c7844a3fbe873922e628
   - enabled: 1
     path: "Assets/Scenes/Chlo\xE9/Chlo\xE9 \xE9t\xE9.unity"
     guid: 9070e4cad33e2284d99774d4ec4a8bc6
+  - enabled: 1
+    path: Assets/Scenes/Mini-jeux/Runner 1.unity
+    guid: 5f284e6c76f860f47a857063e8f6bdd4
   - enabled: 1
     path: Assets/Scenes/Avant fin.unity
     guid: 48f2f8bd314fb6d4a935d8732ae02f72

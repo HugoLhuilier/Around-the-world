@@ -95,7 +95,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            nameText.text = userName;
+            nameText.text = "Numa";
         }
     }
 

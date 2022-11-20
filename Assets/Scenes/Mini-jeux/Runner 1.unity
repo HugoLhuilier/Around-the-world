@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgspeed: 4
-  spawningTime: 1
+  spawningTime: 0.5
   textVies: {fileID: 139914790}
   player: {fileID: 1317607512}
   box: {fileID: 9033957326581535790, guid: ceeb3afd87828ce40924c2a7a63a1a24, type: 3}
@@ -1400,7 +1400,7 @@ MonoBehaviour:
   textTime: {fileID: 1406867913}
   textReults: {fileID: 952054107}
   loader: {fileID: 761120379}
-  nextSceneIndex: 14
+  nextSceneIndex: 17
 --- !u!4 &1353650012
 Transform:
   m_ObjectHideFlags: 0
