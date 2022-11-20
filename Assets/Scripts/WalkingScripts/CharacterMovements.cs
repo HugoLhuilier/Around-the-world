@@ -47,8 +47,8 @@ public class CharacterMovements : MonoBehaviour
         {
             horizontalSpeed = Run();
         }
-        Flip(facing);
         animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
+        animator.SetFloat("Facing", facing);
     }
 
     private void getInput() {
