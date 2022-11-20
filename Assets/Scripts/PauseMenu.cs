@@ -1,10 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Pause : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public IsWriting isWriting;
+    public GameObject panel;
+
+
+    public float transitionTime = 1.5f;
+    private Animator transition;
+
+    void Start()
+    {
+        if (panel != null)
+        {
+            panel.SetActive(false);
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -13,14 +27,20 @@ public class Pause : MonoBehaviour
         {
             if (isWriting.getWriting())
             {
-                UnityEngine.Debug.Log("1");
+                panel.SetActive(false);
                 isWriting.changeWritingState(false);
+
             }
             else
             {
-                UnityEngine.Debug.Log("2");
                 isWriting.changeWritingState(true);
+                panel.SetActive(true);
             }
         }
+    }
+
+    public void quit()
+    {
+        Application.Quit();
     }
 }
