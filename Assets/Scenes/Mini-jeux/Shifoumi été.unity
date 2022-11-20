@@ -318,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 46.9, y: -51.7}
+  m_AnchoredPosition: {x: 65.899994, y: -51.699997}
   m_SizeDelta: {x: 190, y: 209}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108206267
@@ -419,7 +419,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
   m_sharedMaterial: {fileID: 685722748283493165, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -527,9 +527,9 @@ RectTransform:
   m_Father: {fileID: 1755063399}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 499, y: 208}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -71, y: -60}
   m_SizeDelta: {x: 218, y: 137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &344363255
@@ -787,7 +787,7 @@ PrefabInstance:
     - target: {fileID: 4433986037420407584, guid: 4a5be7baac77d874c8d60a39a36bff75, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+      objectReference: {fileID: 11400000, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
     - target: {fileID: 4433986037420407584, guid: 4a5be7baac77d874c8d60a39a36bff75, type: 3}
       propertyPath: m_isRightToLeft
       value: 0
@@ -1175,7 +1175,7 @@ PrefabInstance:
     - target: {fileID: 4055131754589654417, guid: 9fb22d69bc73dac43a07d9b652af6b96, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+      objectReference: {fileID: 11400000, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
     - target: {fileID: 4055131754589654417, guid: 9fb22d69bc73dac43a07d9b652af6b96, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -2060,7 +2060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -208, y: -55}
+  m_AnchoredPosition: {x: -224, y: -55}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1941564552
@@ -2085,8 +2085,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
-  m_sharedMaterial: {fileID: -3288163747921333244, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
+  m_sharedMaterial: {fileID: -3288163747921333244, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2195,7 +2195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 209, y: -55}
+  m_AnchoredPosition: {x: 228, y: -55}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1946555851
@@ -2220,8 +2220,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
-  m_sharedMaterial: {fileID: -3288163747921333244, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
+  m_sharedMaterial: {fileID: -3288163747921333244, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2487,7 +2487,7 @@ PrefabInstance:
     - target: {fileID: 8974409212517550338, guid: 4c1f7f51b005d5a4ca1b8a31a5a48e86, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+      objectReference: {fileID: 11400000, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
     - target: {fileID: 8974409212517550338, guid: 4c1f7f51b005d5a4ca1b8a31a5a48e86, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1

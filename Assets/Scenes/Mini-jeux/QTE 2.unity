@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5019536, g: 0.5019536, b: 0.5019536, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -456,12 +456,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 799985531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d4bd58d85228b4e809f09fc2bf095d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f2df9a03ae83414f9a8bee06ecd5675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eSprite: {fileID: 21300000, guid: a8e41acfc40d7f84cb723f82a9efbdc2, type: 3}
-  rightSprite: {fileID: 21300000, guid: c9d79d4b3afaa3a4aa300b89b0906634, type: 3}
-  leftSprite: {fileID: 21300000, guid: 890b44d776f5a79478470e6f1eac8b81, type: 3}
+  eSprite: {fileID: 21300000, guid: 82c67614034ec7e46b2af18eea3490c8, type: 3}
+  rightSprite: {fileID: 21300000, guid: 0fa318d869065e64f8be41a80826ff5e, type: 3}
+  leftSprite: {fileID: 21300000, guid: cb1437ca824c8544991c3c0ab48a4611, type: 3}
   action: {fileID: 822502605}
   bienouej: {fileID: 1122527242}
 --- !u!4 &799985533
@@ -545,7 +545,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &822502607
@@ -707,7 +707,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Woaw !
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 47b5cf3c56bb2e84186536dba9b95e96, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d74258bb25c18a44fb8293df8cdbc55f, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
