@@ -101,5 +101,5 @@ MonoBehaviour:
   targetMove: {fileID: 0}
   smoothFact: 0.2
   setOffset: {x: 5, y: 2, z: -10}
-  camMinLim: {x: -16, y: -1.7, z: -10}
-  camMaxLimit: {x: 16, y: 2, z: -10}
+  camMinLim: {x: 0, y: 0, z: -10}
+  camMaxLimit: {x: 16, y: 0, z: -10}
