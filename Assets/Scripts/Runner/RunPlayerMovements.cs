@@ -10,13 +10,16 @@ public class RunPlayerMovements : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float invincibilityTime;
     [SerializeField] private RunnerController controller;
+    private Transform tr;
     private SpriteRenderer spriteRenderer;
     private float invCooldown = 0;
+    private float facing = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        tr = GetComponent<Transform>();
         spriteRenderer = rb.GetComponent<SpriteRenderer>();
     }
 
@@ -31,6 +34,18 @@ public class RunPlayerMovements : MonoBehaviour
         if(invCooldown > 0)
         {
             spriteRenderer.color = Color.white;
+        }
+
+        if (horizontal > 0.1)
+        {
+            facing = 1f;
+            tr.localScale = 0.4742059f * Vector3.one;
+        }
+
+        if (horizontal < -0.1)
+        {
+            facing = -1f;
+            tr.localScale = new Vector3(-0.4742059f, 0.4742059f, 0.4742059f);
         }
     }
 
@@ -47,7 +62,7 @@ public class RunPlayerMovements : MonoBehaviour
             vies--;
             invCooldown = -invincibilityTime;
             controller.OnHit();
-            spriteRenderer.color = Color.gray;
+            spriteRenderer.color = Color.red;
         }
     }
 }
