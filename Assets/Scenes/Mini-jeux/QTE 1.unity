@@ -584,6 +584,7 @@ MonoBehaviour:
   bienouej: {fileID: 1122527242}
   loader: {fileID: 1749864449}
   nextScene: 4
+  animator: {fileID: 1432584437}
 --- !u!4 &799985533
 Transform:
   m_ObjectHideFlags: 0
@@ -1162,6 +1163,11 @@ PrefabInstance:
 --- !u!4 &1432584436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3724536118283526465, guid: 4c36833a2ae977a4fbfe5c673bc34b41, type: 3}
+  m_PrefabInstance: {fileID: 1432584435}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1432584437 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3724536118283526466, guid: 4c36833a2ae977a4fbfe5c673bc34b41, type: 3}
   m_PrefabInstance: {fileID: 1432584435}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1640270180

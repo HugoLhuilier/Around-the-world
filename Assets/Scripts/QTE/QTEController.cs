@@ -17,6 +17,7 @@ public class QTEController : MonoBehaviour
     [SerializeField] private GameObject bienouej;
     [SerializeField] private LvlLoaderv2 loader;
     public int nextScene;
+    [SerializeField] private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,7 @@ public class QTEController : MonoBehaviour
             if (touchPressed == "Right")
             {
                 success = true;
+                animator.Play("BirdRaisingRightWing");
             }
         } while (!success);
         waiting = false;
@@ -92,6 +94,7 @@ public class QTEController : MonoBehaviour
             if (touchPressed == "Left")
             {
                 success = true;
+                animator.Play("BirdRaisingLeftWing");
             }
         } while (!success);
         waiting = false;
@@ -111,6 +114,7 @@ public class QTEController : MonoBehaviour
             if (touchPressed == "e")
             {
                 success = true;
+                animator.Play("BirdRaisingBothWings");
             }
         } while (!success);
         waiting = false;
@@ -129,6 +133,7 @@ public class QTEController : MonoBehaviour
             yield return new WaitUntil(() => touchPressed != null);
             if (touchPressed == "Right")
             {
+                animator.Play("BirdRaisingRightWing");
                 action.SetActive(false);
                 yield return new WaitForSeconds(0.1f);
                 action.SetActive(true);
@@ -137,6 +142,7 @@ public class QTEController : MonoBehaviour
                 yield return new WaitUntil(() => touchPressed != null);
                 if (touchPressed == "Left")
                 {
+                    animator.Play("BirdRaisingLeftWing");
                     action.SetActive(false);
                     yield return new WaitForSeconds(0.1f);
                     action.SetActive(true);
@@ -146,6 +152,7 @@ public class QTEController : MonoBehaviour
                     if(touchPressed == "e")
                     {
                         success = true;
+                        animator.Play("BirdRaisingBothWings");
                     }
                 }
             }
@@ -170,6 +177,7 @@ public class QTEController : MonoBehaviour
             yield return new WaitUntil(() => touchPressed != null);
             if (touchPressed == "Right")
             {
+                animator.Play("BirdRaisingRightWing");
                 action.SetActive(false);
                 yield return new WaitForSeconds(0.1f);
                 action.SetActive(true);
@@ -178,6 +186,7 @@ public class QTEController : MonoBehaviour
                 yield return new WaitUntil(() => touchPressed != null);
                 if (touchPressed == "Left")
                 {
+                    animator.Play("BirdRaisingLeftWing");
                     action.SetActive(false);
                     yield return new WaitForSeconds(0.1f);
                     action.SetActive(true);
@@ -186,6 +195,7 @@ public class QTEController : MonoBehaviour
                     yield return new WaitUntil(() => touchPressed != null);
                     if (touchPressed == "e")
                     {
+                        animator.Play("BirdRaisingBothWings");
                         action.SetActive(false);
                         yield return new WaitForSeconds(0.1f);
                         action.SetActive(true);
@@ -194,6 +204,7 @@ public class QTEController : MonoBehaviour
                         yield return new WaitUntil(() => touchPressed != null);
                         if (touchPressed == "Left")
                         {
+                            animator.Play("BirdRaisingLeftWing");
                             action.SetActive(false);
                             yield return new WaitForSeconds(0.1f);
                             action.SetActive(true);
@@ -202,6 +213,7 @@ public class QTEController : MonoBehaviour
                             yield return new WaitUntil(() => touchPressed != null);
                             if (touchPressed == "Right")
                             {
+                                animator.Play("BirdRaisingRightWing");
                                 action.SetActive(false);
                                 yield return new WaitForSeconds(0.1f);
                                 action.SetActive(true);
@@ -210,6 +222,7 @@ public class QTEController : MonoBehaviour
                                 yield return new WaitUntil(() => touchPressed != null);
                                 if (touchPressed == "e")
                                 {
+                                    animator.Play("BirdRaisingBothWings");
                                     action.SetActive(false);
                                     yield return new WaitForSeconds(0.1f);
                                     action.SetActive(true);
@@ -218,6 +231,7 @@ public class QTEController : MonoBehaviour
                                     yield return new WaitUntil(() => touchPressed != null);
                                     if (touchPressed == "e")
                                     {
+                                        animator.Play("BirdRaisingBothWings");
                                         success = true;
                                     }
                                 }
@@ -247,6 +261,7 @@ public class QTEController : MonoBehaviour
             yield return new WaitUntil(() => touchPressed != null);
             if (touchPressed == "Right")
             {
+                animator.Play("BirdRaisingRightWing");
                 action.SetActive(false);
                 yield return new WaitForSeconds(0.1f);
                 action.SetActive(true);
@@ -255,6 +270,7 @@ public class QTEController : MonoBehaviour
                 yield return new WaitUntil(() => touchPressed != null);
                 if (touchPressed == "e")
                 {
+                    animator.Play("BirdRaisingBothWings");
                     action.SetActive(false);
                     yield return new WaitForSeconds(0.1f);
                     action.SetActive(true);
@@ -263,6 +279,7 @@ public class QTEController : MonoBehaviour
                     yield return new WaitUntil(() => touchPressed != null);
                     if (touchPressed == "Right")
                     {
+                        animator.Play("BirdRaisingRightWing");
                         action.SetActive(false);
                         yield return new WaitForSeconds(0.1f);
                         action.SetActive(true);
@@ -271,6 +288,7 @@ public class QTEController : MonoBehaviour
                         yield return new WaitUntil(() => touchPressed != null);
                         if (touchPressed == "e")
                         {
+                            animator.Play("BirdRaisingBothWings");
                             action.SetActive(false);
                             yield return new WaitForSeconds(0.1f);
                             action.SetActive(true);
@@ -279,6 +297,7 @@ public class QTEController : MonoBehaviour
                             yield return new WaitUntil(() => touchPressed != null);
                             if (touchPressed == "Left")
                             {
+                                animator.Play("BirdRaisingLeftWing");
                                 action.SetActive(false);
                                 yield return new WaitForSeconds(0.1f);
                                 action.SetActive(true);
@@ -287,6 +306,7 @@ public class QTEController : MonoBehaviour
                                 yield return new WaitUntil(() => touchPressed != null);
                                 if (touchPressed == "e")
                                 {
+                                    animator.Play("BirdRaisingBothWings");
                                     success = true;
                                 }
                             }
@@ -311,6 +331,7 @@ public class QTEController : MonoBehaviour
             yield return new WaitUntil(() => touchPressed != null);
             if (touchPressed == "Left")
             {
+                animator.Play("BirdRaisingLeftWing");
                 action.SetActive(false);
                 yield return new WaitForSeconds(0.1f);
                 action.SetActive(true);
@@ -319,6 +340,7 @@ public class QTEController : MonoBehaviour
                 yield return new WaitUntil(() => touchPressed != null);
                 if (touchPressed == "e")
                 {
+                    animator.Play("BirdRaisingBothWings");
                     action.SetActive(false);
                     yield return new WaitForSeconds(0.1f);
                     action.SetActive(true);
@@ -327,6 +349,7 @@ public class QTEController : MonoBehaviour
                     yield return new WaitUntil(() => touchPressed != null);
                     if (touchPressed == "Left")
                     {
+                        animator.Play("BirdRaisingLeftWing");
                         action.SetActive(false);
                         yield return new WaitForSeconds(0.1f);
                         action.SetActive(true);
@@ -335,6 +358,7 @@ public class QTEController : MonoBehaviour
                         yield return new WaitUntil(() => touchPressed != null);
                         if (touchPressed == "e")
                         {
+                            animator.Play("BirdRaisingBothWings");
                             action.SetActive(false);
                             yield return new WaitForSeconds(0.1f);
                             action.SetActive(true);
@@ -343,6 +367,7 @@ public class QTEController : MonoBehaviour
                             yield return new WaitUntil(() => touchPressed != null);
                             if (touchPressed == "Right")
                             {
+                                animator.Play("BirdRaisingRightWing");
                                 action.SetActive(false);
                                 yield return new WaitForSeconds(0.1f);
                                 action.SetActive(true);
@@ -351,6 +376,7 @@ public class QTEController : MonoBehaviour
                                 yield return new WaitUntil(() => touchPressed != null);
                                 if (touchPressed == "e")
                                 {
+                                    animator.Play("BirdRaisingBothWings");
                                     success = true;
                                 }
                             }
@@ -375,6 +401,7 @@ public class QTEController : MonoBehaviour
             yield return new WaitUntil(() => touchPressed != null);
             if (touchPressed == "e")
             {
+                animator.Play("BirdRaisingBothWings");
                 action.SetActive(false);
                 yield return new WaitForSeconds(0.1f);
                 action.SetActive(true);
@@ -383,6 +410,7 @@ public class QTEController : MonoBehaviour
                 yield return new WaitUntil(() => touchPressed != null);
                 if (touchPressed == "e")
                 {
+                    animator.Play("BirdRaisingBothWings");
                     action.SetActive(false);
                     yield return new WaitForSeconds(0.1f);
                     action.SetActive(true);
@@ -391,6 +419,7 @@ public class QTEController : MonoBehaviour
                     yield return new WaitUntil(() => touchPressed != null);
                     if (touchPressed == "e")
                     {
+                        animator.Play("BirdRaisingBothWings");
                         action.SetActive(false);
                         yield return new WaitForSeconds(0.1f);
                         action.SetActive(true);
@@ -399,6 +428,7 @@ public class QTEController : MonoBehaviour
                         yield return new WaitUntil(() => touchPressed != null);
                         if (touchPressed == "e")
                         {
+                            animator.Play("BirdRaisingBothWings");
                             action.SetActive(false);
                             yield return new WaitForSeconds(0.1f);
                             action.SetActive(true);
@@ -407,6 +437,7 @@ public class QTEController : MonoBehaviour
                             yield return new WaitUntil(() => touchPressed != null);
                             if (touchPressed == "e")
                             {
+                                animator.Play("BirdRaisingBothWings");
                                 action.SetActive(false);
                                 yield return new WaitForSeconds(0.1f);
                                 action.SetActive(true);
