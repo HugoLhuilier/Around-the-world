@@ -7,7 +7,7 @@ using static System.TimeZoneInfo;
 public class LvlLoaderv2 : MonoBehaviour
 {
     public float transitionTime = 1.5f;
-    public Animator transition;
+    private Animator transition;
 
     // Start is called before the first frame update
     void Start()

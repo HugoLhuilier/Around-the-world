@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.InputSystem.DefaultInputActions;
 
 public class GameController : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI pPointsText;
     [SerializeField] private TextMeshProUGUI rPointsText;
     [SerializeField] private int pointsToReach = 3;
+    [SerializeField] private LvlLoaderv2 loader;
 
  
     // Start is called before the first frame update
@@ -112,12 +114,12 @@ public class GameController : MonoBehaviour
                 {
                     case "Pierre":
                         rPierre.SetActive(true);
-                        PWins();
+                        RWins();
                         break;
 
                     case "Feuille":
                         rFeuille.SetActive(true);
-                        RWins();
+                        PWins();
                         break;
 
                     default:
@@ -130,6 +132,17 @@ public class GameController : MonoBehaviour
         results.SetActive(true);
 
         yield return new WaitForSeconds(3f);
+
+        if(pPoints >= pointsToReach)
+        {
+            loader.LoadNextLevel(6);
+            yield return new WaitForSeconds(3f);
+        }
+        if (rPoints >= pointsToReach)
+        {
+            loader.LoadNextLevel(5);
+            yield return new WaitForSeconds(3f);
+        }
 
         // Boîte de dialogue
 
@@ -145,6 +158,7 @@ public class GameController : MonoBehaviour
 
         bController.ok = false;
         bController.fini = false;
+        bController.selectedAct = UnityEngine.Random.Range(0, bController.nbActions - 1);
     }
 
     public void PWins()

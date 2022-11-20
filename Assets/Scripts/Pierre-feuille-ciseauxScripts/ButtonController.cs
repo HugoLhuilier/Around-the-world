@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,6 +14,11 @@ public class ButtonController : MonoBehaviour
     [SerializeField] private float smoothTime;
     [SerializeField] private Transform selectionBar;
     [SerializeField] private GameController gameController;
+    [SerializeField] private String[] rActions;
+    [SerializeField] private String[] rDialogues;
+    public int nbActions;
+    [SerializeField] private TextMeshProUGUI diagText;
+    public int selectedAct;
 
     private Vector3 velocity = Vector3.zero;
     private String[] buttons;
@@ -30,6 +36,7 @@ public class ButtonController : MonoBehaviour
         buttons[0] = "Pierre";
         buttons[1] = "Feuille";
         buttons[2] = "Ciseaux";
+        selectedAct = UnityEngine.Random.Range(0, nbActions - 1);
     }
 
     // Update is called once per frame
@@ -37,6 +44,7 @@ public class ButtonController : MonoBehaviour
     {
         if (!fini)
         {
+            diagText.text = rDialogues[selectedAct];
             getInput();
             updateSelected();
 
@@ -64,8 +72,9 @@ public class ButtonController : MonoBehaviour
 
             if (ok)
             {
-                StartCoroutine(gameController.CountDown(buttons[selected], "Ciseaux"));
+                StartCoroutine(gameController.CountDown(buttons[selected], rActions[selectedAct]));
                 fini = true;
+                diagText.text = "";
             }
         }
         if (ok)
