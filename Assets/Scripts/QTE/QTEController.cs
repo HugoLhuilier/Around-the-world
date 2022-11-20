@@ -15,6 +15,8 @@ public class QTEController : MonoBehaviour
     public GameObject action;
     private SpriteRenderer actionSprite;
     [SerializeField] private GameObject bienouej;
+    [SerializeField] private LvlLoaderv2 loader;
+    public int nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -424,6 +426,7 @@ public class QTEController : MonoBehaviour
         waiting = false;
         action.SetActive(false);
         yield return new WaitForSeconds(3f);
+        loader.LoadNextLevel(nextScene);
     }
 
 }
