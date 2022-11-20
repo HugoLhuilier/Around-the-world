@@ -911,6 +911,7 @@ MonoBehaviour:
   rPointsText: {fileID: 1941564552}
   pointsToReach: 3
   loader: {fileID: 308614902}
+  nextScene: 6
 --- !u!4 &954981684
 Transform:
   m_ObjectHideFlags: 0

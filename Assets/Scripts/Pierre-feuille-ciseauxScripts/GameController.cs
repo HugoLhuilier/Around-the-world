@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEngine.InputSystem.DefaultInputActions;
 
@@ -29,8 +30,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI rPointsText;
     [SerializeField] private int pointsToReach = 3;
     [SerializeField] private LvlLoaderv2 loader;
+    public int nextScene;
 
- 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -135,12 +137,12 @@ public class GameController : MonoBehaviour
 
         if(pPoints >= pointsToReach)
         {
-            loader.LoadNextLevel(6);
+            loader.LoadNextLevel(nextScene);
             yield return new WaitForSeconds(3f);
         }
         if (rPoints >= pointsToReach)
         {
-            loader.LoadNextLevel(5);
+            loader.LoadNextLevel(SceneManager.GetActiveScene().buildIndex);
             yield return new WaitForSeconds(3f);
         }
 
