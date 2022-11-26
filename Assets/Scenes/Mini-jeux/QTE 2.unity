@@ -595,6 +595,7 @@ MonoBehaviour:
   bienouej: {fileID: 1122527242}
   loader: {fileID: 505077262}
   nextScene: 9
+  animator: {fileID: 1657251745}
 --- !u!4 &799985533
 Transform:
   m_ObjectHideFlags: 0
@@ -1259,6 +1260,11 @@ Transform:
   m_Father: {fileID: 1774517560}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1657251745 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3724536118283526466, guid: 4c36833a2ae977a4fbfe5c673bc34b41, type: 3}
+  m_PrefabInstance: {fileID: 1432584435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1774517559
 GameObject:
   m_ObjectHideFlags: 0
