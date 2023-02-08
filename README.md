@@ -1,2 +1,2 @@
 # Around-the-world
-visite le monde avec nous !!!!!!
+Jeu présenté lors de la Unijam 2022.
